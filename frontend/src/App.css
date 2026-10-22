@@ -1,0 +1,118 @@
+/* ReubenVF: This stylesheet gives the product dashboard a clean inventory-style layout. */
+
+/* ReubenVF: This stylesheet keeps the inventory dashboard simple, readable, and easy to work with. */
+
+.product-shell {
+  max-width: 1200px;
+}
+
+.page-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.eyebrow {
+  margin: 0 0 0.25rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.75rem;
+  color: #4f46e5;
+  font-weight: 700;
+}
+
+.page-header h1 {
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+  color: #111827;
+}
+
+.product-counter {
+  background: #e0e7ff;
+  color: #3730a3;
+  border-radius: 999px;
+  padding: 0.5rem 0.9rem;
+  font-weight: 700;
+}
+
+.form-card,
+.list-card {
+  border-radius: 18px !important;
+}
+
+.section-title {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #111827;
+}
+
+.product-name-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-name-wrap small {
+  color: #6b7280;
+  margin-top: 0.2rem;
+}
+
+.quantity-control {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: #f3f4f6;
+  border-radius: 999px;
+  padding: 0.3rem 0.5rem;
+}
+
+.quantity-control span {
+  min-width: 2rem;
+  text-align: center;
+  font-weight: 700;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.list-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 2rem 1rem;
+  color: #6b7280;
+  background: #f9fafb;
+  border-radius: 14px;
+}
+
+.empty-state p {
+  margin: 0 0 0.5rem;
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+
+.product-table th,
+.product-table td {
+  vertical-align: middle;
+}
+
+@media (max-width: 768px) {
+  .page-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .action-buttons {
+    justify-content: flex-start;
+  }
+}
